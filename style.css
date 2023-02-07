@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: max-content;
+    padding: 71px 24px 71px 24px;
+    font-size: 15px;
+  }
+}
+
+.background-svg {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.order__component {
+  justify-self: center;
+  margin-top: 102px;
+  width: 450px;
+  height: 697px;
+  background-color: white;
+  line-height: 1.5;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+@media screen and (max-width: 375px) {
+  .order__component {
+    justify-self: center;
+    margin-top: 0;
+    max-width: 327px;
+    /* height: 567px; */
+    height: auto;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 48px;
+  margin-top: -3px;
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    gap: 16px;
+    padding: 32px;
+    /* margin-top: -3px; */
+  }
+}
+
+.hero img {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  .hero img {
+    height: 160px;
+  }
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+  .heading {
+    font-size: 22px;
+  }
+}
+
+.order-text {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 375px) {
+  .order-text {
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+}
+
+.plan__box {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 11px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .plan__box {
+    padding: 16px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+}
+
+.plan__info {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  gap: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .plan__info {
+    gap: 20px;
+  }
+}
+
+.plan__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.text-plan {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.text-price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+a:link,
+a:visited {
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+  font-size: 14px;
+  transition: all 0.2s;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  line-height: 1;
+}
+
+a:active,
+a:hover {
+  color: rgb(124, 89, 201);
+  border-bottom: 1px solid transparent;
+}
+
+.buttons {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .buttons {
+    gap: 24px;
+  }
+}
+
+.btn__payment,
+.btn__cancel {
+  font-family: "Red Hat Display";
+  border: none;
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 11px;
+  transition: all 0.3s;
+}
+
+.btn__payment {
+  padding: 15px 102px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .btn__payment {
+    padding: 15px 50px;
+    margin-bottom: 0;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  }
+}
+
+.btn__cancel {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+}
+
+.btn__payment:hover,
+.btn__payment:active {
+  cursor: pointer;
+  background-color: rgb(124, 89, 201);
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.btn__cancel:hover,
+.btn__cancel:active {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
